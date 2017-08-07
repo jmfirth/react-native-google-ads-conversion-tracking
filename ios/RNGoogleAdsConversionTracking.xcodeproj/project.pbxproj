@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E43B9841F38F3D000909F66 /* libRCTAdSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E43B9831F38F3CA00909F66 /* libRCTAdSupport.a */; };
 		EBBFDE061CFDD88C00EB401E /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFDE051CFDD88C00EB401E /* libGoogleConversionTracking.a */; };
 		EBE9E9371CFDC7AF00E28EC6 /* RNGoogleAdsConversionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9E9361CFDC7AF00E28EC6 /* RNGoogleAdsConversionTracking.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E43B9821F38F3CA00909F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E43B97E1F38F3CA00909F66 /* RCTAdSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
+			remoteInfo = RCTAdSupport;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EBE9E9041CFD957500E28EC6 /* CopyFiles */ = {
@@ -24,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E43B97E1F38F3CA00909F66 /* RCTAdSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAdSupport.xcodeproj; path = "../../react-native/Libraries/AdSupport/RCTAdSupport.xcodeproj"; sourceTree = "<group>"; };
 		EBBFDE051CFDD88C00EB401E /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleConversionTracking.a; path = libs/libGoogleConversionTracking.a; sourceTree = "<group>"; };
 		EBE9E9061CFD957500E28EC6 /* libRNGoogleAdsConversionTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGoogleAdsConversionTracking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE9E9351CFDC7AF00E28EC6 /* RNGoogleAdsConversionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGoogleAdsConversionTracking.h; sourceTree = "<group>"; };
@@ -35,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E43B9841F38F3D000909F66 /* libRCTAdSupport.a in Frameworks */,
 				EBBFDE061CFDD88C00EB401E /* libGoogleConversionTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E43B97D1F38F3CA00909F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E43B97E1F38F3CA00909F66 /* RCTAdSupport.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E43B97F1F38F3CA00909F66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E43B9831F38F3CA00909F66 /* libRCTAdSupport.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EBBFDE071CFDD89F00EB401E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +86,7 @@
 				EBE9E9351CFDC7AF00E28EC6 /* RNGoogleAdsConversionTracking.h */,
 				EBE9E9361CFDC7AF00E28EC6 /* RNGoogleAdsConversionTracking.m */,
 				EBE9E9071CFD957500E28EC6 /* Products */,
+				3E43B97D1F38F3CA00909F66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,12 +142,28 @@
 			mainGroup = EBE9E8FD1CFD957500E28EC6;
 			productRefGroup = EBE9E9071CFD957500E28EC6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E43B97F1F38F3CA00909F66 /* Products */;
+					ProjectRef = 3E43B97E1F38F3CA00909F66 /* RCTAdSupport.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EBE9E9051CFD957500E28EC6 /* RNGoogleAdsConversionTracking */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E43B9831F38F3CA00909F66 /* libRCTAdSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAdSupport.a;
+			remoteRef = 3E43B9821F38F3CA00909F66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBE9E9021CFD957500E28EC6 /* Sources */ = {
@@ -168,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -206,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
