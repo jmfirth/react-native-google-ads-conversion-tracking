@@ -10,7 +10,7 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(reportWithConversionID:(NSString*)conversionId label:(NSString*)trackingLabel value:(NSString*)trackingValue isRepeatable:(BOOL)repeatable)
+RCT_EXPORT_METHOD(reportWithConversionId:(NSString*)conversionId label:(NSString*)trackingLabel value:(NSString*)trackingValue isRepeatable:(BOOL)repeatable)
 {
     [ACTConversionReporter reportWithConversionID:conversionId label:trackingLabel value:trackingValue isRepeatable:repeatable];
 }
